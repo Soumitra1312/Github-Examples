@@ -51,6 +51,22 @@ https://github.com/settings/token
 git clone git@github.com:Soumitra1312/Github-Examples.git
 cd Github-Examples
 ```
+We will need to create our own SSH rsa key pair
+
+```sh
+sshe-keygen -t rs
+```
+
+For WSL users and if you create a non default key you might need to add it
+```sh
+eval 'ssh-agent'
+ssh-add/home/Soumitra1312/.ssh/alt-github_id_rsa
+```
+
+We can test our connection here:
+```
+ssh - T git@github.com
+```
 
 ## Commits
 
