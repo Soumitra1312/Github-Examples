@@ -40,6 +40,17 @@ cd tmp
 git clone https://github.com/Soumitra1312/Github-Examples.git
 cd Github-Examples
 ```
+> You'll need to generate a Persoanl Access Token (PAT) for enhanced security while using Github locally.
+> Personal Access Token can be used in place of passwords.
+```sh
+https://github.com/settings/token
+```
+
+### SSH
+```ssh
+git clone git@github.com:Soumitra1312/Github-Examples.git
+cd Github-Examples
+```
 
 ## Commits
 
