@@ -54,7 +54,7 @@ cd Github-Examples
 We will need to create our own SSH rsa key pair
 
 ```sh
-sshe-keygen -t rs
+ssh-keygen -t rsa
 ```
 
 For WSL users and if you create a non default key you might need to add it
@@ -109,11 +109,44 @@ git commit --m "add another exclamation mark"
 
 ## Branches
 
-## Remotes
+List of branches
+```sh
+git branch
+```
 
-## Stashing
+Create a new branch
+```sh
+git branch branch_name
+```
+
+Checkout the branch
+```
+git checkout dev
+```
+
+## Remotes
+We can add remotes but often you will just add remote via upstream when adding a branch.
+```sh
+git remote add ...
+git branch -u origin new-feature
+```
+
+## Stashing 
+It is used when we want to save the current progress of any task and start another task and resume it after some time.
+```sh
+git stash list
+git stash
+git stash save my-name
+git stash apply
+git stash pop
+```
 
 ## Merging
+
+```
+git checkout dev
+git merge main
+```
 
 ## Add
 
